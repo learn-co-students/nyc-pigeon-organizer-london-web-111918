@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_list.include?(name)
           if pigeon_list[name].include?(attribute)
             pigeon_list[name][attribute] << info.to_s
-          elsif !pigeon_list[name].include?(attribute)
+          else
             pigeon_list[name][attribute] = [info.to_s]
           end
         else
